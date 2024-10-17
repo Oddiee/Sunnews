@@ -4,8 +4,6 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
 import ErrorMessage from './components/ErrorMessage';
-import './app.css';
-
 const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
 const App = () => {
