@@ -4,9 +4,9 @@ const Footer = ({}) => {
 
  return (
 
-  <footer className="footer footer-center bg-white text-base-content p-4">
+  <footer className="footer footer-center h-20 bg-gradient-to-t from-white to-transparent text-base-content p-4">
   <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by Odd</p>
+    <p className='font-bold text-neutral text-md'>Copyright © {new Date().getFullYear()} - All right reserved by Odd</p>
   </aside>
 </footer>
  );
