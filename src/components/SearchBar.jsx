@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }) => {
         placeholder="Search Location"
         className="input input-bordered w-full max-w-xs font-roboto font-black"
       />
-      <button type="submit" className="btn btn-primary ml-3 font-roboto font-black">
+      <button type="submit" className="btn btn-primary ml-3 font-roboto">
         Search
       </button>
     </form>

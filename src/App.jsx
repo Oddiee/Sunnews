@@ -1,5 +1,6 @@
-// Importation of the components 
 import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
 import ErrorMessage from './components/ErrorMessage';
@@ -31,12 +32,20 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-blue-500 p-60">
-      <h1 className="text-4xl font-roboto font-bold text-center mb-8">SunNews for Today</h1>
-      <SearchBar onSearch={fetchWeather} />
+    <div className='flex flex-col min-h-screen bg-theme-adaptive'>
+        
+      <main className='flex-grow container mx-auto px-4 pb-12 '>
+      <Navbar onSearch={fetchWeather}/>
+       
+      <div className='mt-20'><h1 className="text-4xl font-bold text-center mb-8">SunNews for Today</h1>
+      <SearchBar onSearch={fetchWeather} /></div>
       {loading && <p className="text-center">Loading...</p>}
       {error && <ErrorMessage message={error} />}
       {weatherData && <WeatherCard weatherData={weatherData} />}
+      
+      </main>   
+    <Footer />
+      
     </div>
     
   );

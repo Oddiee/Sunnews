@@ -6,7 +6,14 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {fontFamily: {
+      biennale: ["Biennale", "sans-serif"],
+      opensans: ["Open Sans", "sans-serif"],
+    },},
   },
-  plugins: [daisyui],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cmyk"], 
+    "font-family": "Open Sans, sans-serif",
+  },
 };
