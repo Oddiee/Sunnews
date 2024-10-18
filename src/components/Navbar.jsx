@@ -1,7 +1,6 @@
 import React from 'react';
-import SearchBar from './SearchBar'; // Import the SearchBar component
 
-const Navbar = ({ onSearch }) => {
+const Navbar = () => {
   return (
     <div className="navbar bg-transparent p-8">
     <div className="navbar-start">

@@ -39,7 +39,7 @@ const App = () => {
        
       <div className='mt-20'><h1 className="text-2xl font-bold text-center text-white mb-8">SunNews for Today</h1>
       <SearchBar onSearch={fetchWeather} /></div>
-      {loading && <p className="text-center">Loaing...</p>}
+      {loading && <p className="text-center">Loading...</p>}
       {error && <ErrorMessage message={error} />}
       {weatherData && <WeatherCard weatherData={weatherData} />}
       
